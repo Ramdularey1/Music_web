@@ -9,8 +9,10 @@ import connectDB from "./db/index.js";
 
 dotenv.config({
     path: './.env',
-
 })
+
+const port = process.env.PORT || 8000;
+
 const app = express()
 app.use('/uploads', express.static('uploads'));
 app.use(cookieParser())
@@ -37,7 +39,7 @@ app.use("/api/v1/users", userRoute)
 
 
 connectDB().then(() => {
-    app.listen(8000, () => {
+    app.listen(port, () => {
         console.log(`⚙️  Server is running at port : ${process.env.PORT}`)
     })
 }).catch((error) => {
