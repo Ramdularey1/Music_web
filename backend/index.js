@@ -16,7 +16,11 @@ const port = process.env.PORT || 8000;
 const app = express()
 app.use('/uploads', express.static('uploads'));
 app.use(cookieParser())
-
+app.get('/', (req, res) => {
+    res.send("hello hotel")
+    console.log("Hello hotel")
+  })
+  
 app.use(cors({
     origin: process.env.CORS_ORIGIN,
     credentials: true
