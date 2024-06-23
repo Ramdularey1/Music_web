@@ -13,7 +13,7 @@ function NavBar() {
     useEffect(() => {
         const fetchSong = async () => {
           try {
-            const response = await axios.get("http://localhost:8000/api/v1/users/getmusic")
+            const response = await axios.get("https://music-web-musicapi.vercel.app/api/v1/users/getmusic")
             
             
             dispacher(updateAllSong(response.data.data));

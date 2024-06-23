@@ -19,7 +19,7 @@ function Registration() {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8000/api/v1/users/register", formData);
+      const response = await axios.post("https://music-web-musicapi.vercel.app/api/v1/users/register", formData);
       response.status
       const data = response.data;
       console.log(response.status);
