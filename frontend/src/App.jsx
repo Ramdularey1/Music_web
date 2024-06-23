@@ -37,11 +37,7 @@ import Login from "./Component/auth/Forms/Login";
 
 function App() {
   return (
-    <h1 className="text-4xl">Hello World</h1>
-  );
-}
-
-{/* <Provider store={store}>
+    <Provider store={store}>
       <BrowserRouter>
           <Routes>
             <Route element={<RootLayout/>}>
@@ -73,7 +69,9 @@ function App() {
             </Route>
           </Routes> 
       </BrowserRouter>
-    </Provider> */}
+    </Provider>
+  );
+}
 
 
 
