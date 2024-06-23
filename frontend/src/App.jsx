@@ -38,39 +38,40 @@ import HelloWorld from "./Component/Hello";
 
 function App() {
   return (
-    <Provider store={store}>
-      <BrowserRouter>
-          <Routes>
-            <Route element={<HelloWorld/>}>
-              {/* <Route path="/" element={<Body />} />
-              <Route path="/allmusic" element={<AllMusic />} />
-              <Route path="/oldmusic" element={<OldMusic />} />
-              <Route path="/trendingsong" element={<Trending />} />
-              <Route path="/newsong" element={<NewSong />} />
-              <Route path="/topalbum" element={<TopAlbum />} />
-              <Route path="/Hindi Song" element={<HindiSong />} />
-              <Route path="/English Song" element={<EnglishSongs />} />
-              <Route path="/Spanish Song" element={<SpanishSong />} />
-              <Route path="/South Song" element={<SouthSong />} />
-              <Route path="/Motivational songs" element={<MotivationalSong />} />
-              <Route path="/Punjabi songs" element={<PunjabiSong />} />
-              <Route path="/Romantic songs" element={<RomanticSong />} />
-              <Route path="/Top Music" element={<TopMusic />} />
-              <Route path="/Arjit Singh" element={<ArjitSingh />} />
-              <Route path="/Udit Narayan" element={<UditNarayan />} />
-              <Route path="/Kumar Sanu" element={<KumarSanu />} />
-              <Route path="/Abhijeet Bhattacharya" element={<AbhijeetSong />} />
-              <Route path="/Krishnakumar Kunnath" element={<KkSong />} />
-              <Route path="/Yo Yo Honey Singh" element={<HoneySinghSong />} />
-              <Route path="/Badshah" element={<BadshahSong />} /> */}
-            </Route>
-            {/* <Route element={<AuthLayout/>}>
-              <Route path="/auth" element={<Registration/>} />
-              <Route path="/login" element={<Login/>} />
-            </Route> */}
-          </Routes> 
-      </BrowserRouter>
-    </Provider>
+    <HelloWorld />
+    // <Provider store={store}>
+    //   <BrowserRouter>
+    //       <Routes>
+    //         <Route element={<HelloWorld/>}>
+    //           {/* <Route path="/" element={<Body />} />
+    //           <Route path="/allmusic" element={<AllMusic />} />
+    //           <Route path="/oldmusic" element={<OldMusic />} />
+    //           <Route path="/trendingsong" element={<Trending />} />
+    //           <Route path="/newsong" element={<NewSong />} />
+    //           <Route path="/topalbum" element={<TopAlbum />} />
+    //           <Route path="/Hindi Song" element={<HindiSong />} />
+    //           <Route path="/English Song" element={<EnglishSongs />} />
+    //           <Route path="/Spanish Song" element={<SpanishSong />} />
+    //           <Route path="/South Song" element={<SouthSong />} />
+    //           <Route path="/Motivational songs" element={<MotivationalSong />} />
+    //           <Route path="/Punjabi songs" element={<PunjabiSong />} />
+    //           <Route path="/Romantic songs" element={<RomanticSong />} />
+    //           <Route path="/Top Music" element={<TopMusic />} />
+    //           <Route path="/Arjit Singh" element={<ArjitSingh />} />
+    //           <Route path="/Udit Narayan" element={<UditNarayan />} />
+    //           <Route path="/Kumar Sanu" element={<KumarSanu />} />
+    //           <Route path="/Abhijeet Bhattacharya" element={<AbhijeetSong />} />
+    //           <Route path="/Krishnakumar Kunnath" element={<KkSong />} />
+    //           <Route path="/Yo Yo Honey Singh" element={<HoneySinghSong />} />
+    //           <Route path="/Badshah" element={<BadshahSong />} /> */}
+    //         </Route>
+    //         {/* <Route element={<AuthLayout/>}>
+    //           <Route path="/auth" element={<Registration/>} />
+    //           <Route path="/login" element={<Login/>} />
+    //         </Route> */}
+    //       </Routes> 
+    //   </BrowserRouter>
+    // </Provider>
   );
 }
 
