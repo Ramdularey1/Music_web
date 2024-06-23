@@ -9,7 +9,7 @@ import { updateCurrentSong } from '../utils/currentMusicSlice';
 
 function AllMusic() {
   const dispatcher = useDispatch();
-  const allSongs = useSelector(store => store.name.allSongs);
+  const allSongs = useSelector(store => store.allSongs.allSongs);
   //  const currentSong = useSelector(store => store.currentMusic.currentSong);
  
   

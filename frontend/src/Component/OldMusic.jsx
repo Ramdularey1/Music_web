@@ -8,7 +8,7 @@ import { updateCurrentSong } from '../utils/currentMusicSlice';
 
 function OldMusic() {
   const dispatcher = useDispatch();
-  const allSongs = useSelector(store => store.name.allSongs);
+  const allSongs = useSelector(store => store.allSongs.allSongs);
   const oldSongs = allSongs.filter((item) => {
     return item.category === "663e2a7b494dfb91934a0132"
   })

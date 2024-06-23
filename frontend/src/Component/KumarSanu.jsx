@@ -8,7 +8,7 @@ import { updateCurrentSong } from '../utils/currentMusicSlice';
 
 
 function KumarSanu() {
-  const allSongs = useSelector(store => store.name.allSongs);
+  const allSongs = useSelector(store => store.allSongs.allSongs);
   const dispatcher = useDispatch()
  
   const UditNarayanSong = allSongs.filter((item) => {

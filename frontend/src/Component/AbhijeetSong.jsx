@@ -8,7 +8,7 @@ import { updateCurrentSong } from '../utils/currentMusicSlice';
 
 
 function AbhijeetSong() {
-  const allSongs = useSelector(store => store.name.allSongs);
+  const allSongs = useSelector(store => store.allSongs.allSongs);
   const dispatcher = useDispatch()
  
   const songs = allSongs.filter((item) => {

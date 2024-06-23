@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Provider, useSelector } from "react-redux";
 import store from "./utils/store";
+
 import NavBar from "./Component/NavBar";
 import Body from "./Component/Body";
 

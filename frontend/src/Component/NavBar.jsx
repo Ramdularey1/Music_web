@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
-import { updateAllSong } from '../utils/allSongsSlice';
+// import { updateAllSong } from '../utils/allSongsSlice';
+import { updateAllSongs } from '../utils/allSongsSlice';
 
 function NavBar() {
   const dispacher = useDispatch()
-  const allSongs = useSelector(store => store.name.allSongs);
+  const allSongs = useSelector(store => store.allSongs.allSongs);
 
     useEffect(() => {
         const fetchSong = async () => {
@@ -16,7 +17,7 @@ function NavBar() {
             const response = await axios.get("https://music-web-musicapi.vercel.app/api/v1/users/getmusic")
             
             
-            dispacher(updateAllSong(response.data.data));
+            dispacher(updateAllSongs(response.data.data));
             console.log("nav", allSongs);
           } catch (error) {
             console.log(error)
