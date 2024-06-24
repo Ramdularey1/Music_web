@@ -42,6 +42,7 @@ function App() {
       <BrowserRouter>
       <MusicContainer/>
           <Routes>
+            
             <Route element={<RootLayout/>}>
               <Route path="/" element={<Body />} />
               <Route path="/allmusic" element={<AllMusic />} />
