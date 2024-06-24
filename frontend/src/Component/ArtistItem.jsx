@@ -12,7 +12,7 @@ function ArtistItem(props) {
     setSingerName(props.name);
   },[props.name])
 
-  console.log(singerName);
+
 
   
 

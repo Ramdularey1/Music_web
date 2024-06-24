@@ -18,7 +18,7 @@ function HindiSong() {
 
 
   const [selectedMusic, setSelectedMusic] = useState(null);
-  console.log(selectedMusic)
+  
   const handlePlay = (items) => {
 
     setSelectedMusic(items)

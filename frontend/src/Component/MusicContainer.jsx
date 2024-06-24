@@ -3,7 +3,7 @@ import Music from "./Music";
 
 
 function MusicContainer() {
-    const selectedMusic =  useSelector(store => store.currentMusic.currentSongs)
+    const selectedMusic =  useSelector(store => store.currentMusic.currentSong)
 
     console.log(selectedMusic)
 

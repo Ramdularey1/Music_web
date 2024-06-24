@@ -14,7 +14,7 @@ function NavBar() {
     useEffect(() => {
         const fetchSong = async () => {
           try {
-            const response = await axios.get("https://music-web-musicapi.vercel.app/api/v1/users/getmusic")
+            const response = await axios.get("http://localhost:8000/api/v1/users/getmusic")
             
             
             dispacher(updateAllSongs(response.data.data));
@@ -72,7 +72,7 @@ function NavBar() {
         <div className='flex justify-between bg-[#3c3a3a] h-[61px] items-center text-[#ffff]'>
             <div className='ml-[24px]'>
                 <Link to = "/"><p className=''>Logo</p></Link>
-            </div>
+             </div>
             <div className='lg:w-[40%] w-[60%] mr-[24px] flex justify-between'>
                 {isSmallDevice ? (
                     <div className='absolute right-10 top-[13px]'>

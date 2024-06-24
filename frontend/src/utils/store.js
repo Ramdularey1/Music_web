@@ -6,7 +6,7 @@
 //  const store = configureStore({
 // reducer: {
    
-//     "name":allSongsSlice,
+//     "allSongs":allSongsSlice,
 //     "currentMusic":currentMusicSlice
 // }
 // });
@@ -15,12 +15,12 @@
 
 import { configureStore } from "@reduxjs/toolkit";
 import allSongsReducer from "./allSongsSlice"; // Assuming this exports the reducer
-
+import currentMusicReducer from "./currentMusicSlice"; // Assuming this exports the reducer
 
 const store = configureStore({
   reducer: {
     allSongs: allSongsReducer,
-    
+    currentMusic: currentMusicReducer
   }
 });
 
