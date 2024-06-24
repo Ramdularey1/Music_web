@@ -5,7 +5,7 @@ import Music from "./Music";
 function MusicContainer() {
     const selectedMusic =  useSelector(store => store.currentMusic.currentSong)
 
-    console.log(selectedMusic)
+    // console.log(selectedMusic);
 
     return selectedMusic ? <Music musicData={selectedMusic} /> : null; // Pass the current song to Music component
   }
