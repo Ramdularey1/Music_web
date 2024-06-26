@@ -33,9 +33,9 @@ app.use(express.urlencoded({ extended: false }))
 
 
 
-// app.get("/",(req, res) => {
-//     res.send("HomePage")
-// })
+app.get("/",(req, res) => {
+    res.send("HomePage")
+})
 
 import userRoute from "./router/user.routes.js";
 import { upload } from "./multer/multer.js";
