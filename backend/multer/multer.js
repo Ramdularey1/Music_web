@@ -5,9 +5,9 @@ import path from 'path';
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         if (file.fieldname === 'musicImage') {
-            cb(null, 'uploads/images/'); // Destination folder for image files
+            cb(null, 'public/images/'); // Destination folder for image files
         } else if (file.fieldname === 'musicAudio') {
-            cb(null, 'uploads/audio/'); // Destination folder for audio files
+            cb(null, 'public/audio/'); // Destination folder for audio files
         } else {
             cb(new Error('Invalid fieldname'), null); // Reject files with invalid fieldname
         }
