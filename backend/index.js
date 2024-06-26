@@ -17,10 +17,13 @@ const app = express()
 app.use('/uploads', express.static('uploads'));
 app.use(cookieParser())
 
+
+
 app.use(cors({
-    origin: 'https://music-frontend-jet.vercel.app',
+    origin: 'https://music-frontend-jet.vercel.app/',
     credentials: true
 }))
+
 
 // app.use(cors({
 //          origin: 'http://localhost:5173',
@@ -33,9 +36,9 @@ app.use(express.urlencoded({ extended: false }))
 
 
 
-app.get("/",(req, res) => {
-    res.send("HomePage")
-})
+// app.get("/",(req, res) => {
+//     res.send("HomePage")
+// })
 
 import userRoute from "./router/user.routes.js";
 import { upload } from "./multer/multer.js";
