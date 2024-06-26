@@ -18,7 +18,7 @@ app.use('/uploads', express.static('uploads'));
 app.use(cookieParser())
 
 app.use(cors({
-    origin: 'https://music-frontend-jet.vercel.app/',
+    origin: 'https://music-frontend-jet.vercel.app',
     credentials: true
 }))
 
